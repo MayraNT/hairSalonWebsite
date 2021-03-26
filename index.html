@@ -6,51 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/434da06752.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="main-container">
+    <div class="container">
         <header>
-            <div class="logo"></div>
+            <div class="logo">
+                <i class="fas fa-cut fa-7x fa-rotate-90"></i>
+            </div>
             <nav>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="">Blog</a>
-                <a href="">Contact</a>
+                <a class="main-nav" href="">Home</a>
+                <a class="main-nav" href="./aboutPage/about.html">About</a>
+                <a class="main-nav" href="./imageGallery/">Gallery</a>
+                <a class="main-nav" href="./blogPage/">Blog</a>
+                <a class="main-nav" href="./contactPage/">Contact</a>
             </nav>
         </header>
         <main>
             <div class="main-banner">
-                <h1>The Beacon to All Mankind</h1>
-                <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded.</p>
-                <button>Read More</button>
+                <div class="main-info">
+                    <h1>The Beacon to All Mankind</h1>
+                    <p><span>Our website templates are created with</span><br>
+                    <span>inspiration, checked for quality and originality</span><br>
+                    <span>and meticulously sliced and coded.</span></p>
+                    <input id="readMore-button" type="button" value="Read More">
+                </div>
             </div>
             <div class="feature-banner">
                 <ul>
                     <li>
-                        <a><img></a>
-                        <p>title</p>
+                        <a class="linkTo-gallery" href="./imageGallery/"><img class="feature-img" src="./images/womanHair.jpg" alt="woman with afro">
+                        <p>Natural</p></a>
                     </li>
                     <li>
-                        <a><img></a>
-                        <p>title</p>
+                        <a class="linkTo-gallery" href="./imageGallery/"><img class="feature-img" id="man" src="./images/manHair.jpg" alt="man with different lengths of hair">
+                        <p>Edgy</p></a>
                     </li>
                     <li>
-                        <a><img></a>
-                        <p>title</p>
+                        <a class="linkTo-gallery" href="./imageGallery/"><img class="feature-img" src="./images/womanHair2.jpg" alt="woman with braids and ponytail">
+                        <p>Funky</p></a>
                     </li>
                 </ul>
             </div>
         </main>
         <footer>
-            <div class="footer-nav">
-                <p>Copyright 2023 by CompanyName. All rights reserved.</p>
+            <div class="footer-container">
+                <p>© 2023 by CompanyName. All rights reserved.</p>
                 <nav>
-                    <a href="">Twitter</a>
-                    <a href="">Facebook</a>
-                    <a href="">Google Plus</a>
-                    <a href="">Pinterest</a>
+                    <a class="footer-nav" href=""><i class="fab fa-twitter fa-2x"></i></a>
+                    <a class="footer-nav" href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a class="footer-nav" href=""><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <a class="footer-nav" href=""><i class="fab fa-pinterest-p fa-2x"></i></a>
                 </nav>
             </div>
         </footer>
