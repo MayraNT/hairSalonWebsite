@@ -53,6 +53,56 @@ h1 {
   color: white;
 }
 
+.blogPost {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black 2px;
+}
+
+img {
+  display: block;
+  width: 375px;
+  height: 300px;
+  object-fit: cover;
+  border-right: solid black 2px;
+}
+
+.description {
+  width: 550px;
+  padding: 0 3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description h2 {
+  font-family: 'Chango', cursive;
+  font-size: 24px;
+}
+
+.description p {
+  padding: 20px 0 25px;
+  font-size: 14px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  font-family: 'Chango', cursive;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+  border: solid black 2px;
+}
+
 /* ////// FOOTER ////// */
 footer {
   height: 125px;
