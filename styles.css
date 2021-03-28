@@ -48,11 +48,7 @@ nav > a {
   color: black;
 }
 
-nav > a:hover {
-  color: rgb(168, 69, 44);
-}
-
-#selected {
+nav > a:hover, li p:hover, #selected {
   color: rgb(168, 69, 44);
 }
 
@@ -124,16 +120,27 @@ ul {
   list-style: none;
 }
 
+li p {
+  padding-top: 5%;
+  font-size: 24px;
+}
+
 .feature-img {
   display: block;
   width: 300px;
   height: 275px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border: solid black 2px;
+  filter: grayscale(100%);
 }
 
-#man {
+.feature-img:hover {
+  filter: grayscale(0%);
+  transition: 0.4s ease-in-out;
+}
+
+#middle-img {
   margin: 0 25px;
 }
 
