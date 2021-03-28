@@ -12,7 +12,8 @@ body {
 
 /* ////// HEADER AND NAV ////// */
 header {
-  height: 245px;
+  margin-bottom: 45px;
+  height: 40%;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -21,17 +22,35 @@ header {
 
 header .logo {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  color: rgb(168, 69, 44);
+}
+
+#trims {
+  font-family: 'Chango', cursive;
+  font-size: 50px;
+  color: rgb(36, 34, 34);
+}
+
+.main-nav {
+  padding: 0 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav > a {
   text-decoration: none;
   padding-left: 15px;
   padding-right: 15px;
+  color: black;
 }
 
-.main-nav {
-  color: black;
+nav > a:hover {
+  color: rgb(168, 69, 44);
+}
+
+#selected {
+  color: rgb(168, 69, 44);
 }
 
 /* ////// MAIN CONTENT ////// */
@@ -44,9 +63,10 @@ main {
 
 h1 {
   width: 280px;
+  margin-bottom: 30px;
   padding: 10px;
   font-family: 'Chango', cursive;
-  font-size: 35px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   background-color: rgb(36, 34, 34);
@@ -54,7 +74,7 @@ h1 {
 }
 
 .gallery {
-  margin: 1% 0 2% 0;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -82,7 +102,7 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   color: white;
-  background-color: rgb(48, 45, 45);
+  background-color: rgb(26, 24, 24);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,6 +115,7 @@ footer p {
 .footer-container {
   width: 85%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;

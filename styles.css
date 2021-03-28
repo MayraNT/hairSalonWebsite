@@ -15,7 +15,8 @@ body {
 
 /* ////// HEADER AND NAV ////// */
 header {
-  height: 245px;
+  margin-bottom: 45px;
+  height: 40%;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -24,13 +25,35 @@ header {
 
 header .logo {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  color: rgb(168, 69, 44);
+}
+
+#trims {
+  font-family: 'Chango', cursive;
+  font-size: 50px;
+  color: rgb(36, 34, 34);
+}
+
+.main-nav {
+  padding: 0 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav > a {
   text-decoration: none;
   padding-left: 15px;
   padding-right: 15px;
+  color: black;
+}
+
+nav > a:hover {
+  color: rgb(168, 69, 44);
+}
+
+#selected {
+  color: rgb(168, 69, 44);
 }
 
 .main-nav {
@@ -51,15 +74,6 @@ main .main-banner {
   line-height: 55px;
 }
 
-#readMore-button {
-  margin-top: 15px;
-  padding: 0 30px;
-  border: none;
-  text-transform: uppercase;
-  background-color: cadetblue;
-  color: white;
-}
-
 h1 {
   width: 450px;
   margin: 40px 0px 20px 0px;
@@ -70,11 +84,24 @@ h1 {
   background-color: white;
 }
 
-span {
+.main-info span {
   padding: 10px;
-  background-color: rgb(48, 45, 45);
+  background-color: rgb(26, 24, 24);
   color: white;
   font-size: 20px;
+}
+
+#readMore-button {
+  margin-top: 15px;
+  padding: 0 30px;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgb(168, 69, 44);
+  color: white;
+}
+
+#readMore-button:hover {
+  background-color: rgb(236, 77, 37);
 }
 
 /* ////// FEATURE CONTENT ////// */
@@ -117,7 +144,7 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   color: white;
-  background-color: rgb(48, 45, 45);
+  background-color: rgb(26, 24, 24);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +157,7 @@ footer p {
 .footer-container {
   width: 85%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
