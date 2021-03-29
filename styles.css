@@ -35,7 +35,6 @@ header .logo {
 }
 
 .main-nav {
-  padding: 0 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -192,6 +191,9 @@ footer p {
 }
 
 @media (min-width: 576px) {
+  .main-nav {
+    padding: 0 15%;
+  }
   .main-info {
     padding: 5% 0 0 10%;
   }
@@ -201,6 +203,9 @@ footer p {
 }
 
 @media (min-width: 1013px) {
+  .main-nav {
+    padding: 0 30%;
+  }
   .main-info {
     padding: 2% 8% 2% 50%;
   }

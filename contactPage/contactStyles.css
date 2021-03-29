@@ -28,7 +28,6 @@ header .logo {
 }
 
 .main-nav {
-  padding: 0 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -154,6 +153,9 @@ footer p {
 }
 
 @media (min-width: 576px) {
+  .main-nav {
+    padding: 0 15%;
+  }
   .contactForm {
     width: 500px;
   }
@@ -166,6 +168,9 @@ footer p {
 }
 
 @media (min-width: 1013px) {
+  .main-nav {
+    padding: 0 30%;
+  }
   .contactForm {
     width: 600px;
   }
