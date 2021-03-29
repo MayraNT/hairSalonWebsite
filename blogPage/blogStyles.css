@@ -73,17 +73,15 @@ h1 {
   width: 100%;
   margin-bottom: 15px;
   display: flex;
-  /* flex-wrap: wrap; */
   border: solid black 2px;
 }
 
 img {
-  display: block;
   width: 375px;
   height: 300px;
+  display: block;
   object-fit: cover;
   filter: grayscale(100%);
-  border-right: solid black 2px;
 }
 
 img:hover {
@@ -93,7 +91,6 @@ img:hover {
 
 .description {
   margin: 0;
-  width: 550px;
   padding: 0 3%;
   text-align: center;
   display: flex;
@@ -159,4 +156,50 @@ footer p {
   color: white;
   border-right: solid white 1px;
   border-bottom: solid white 1px;
+}
+
+/* ////// RESPONSIVENESS ////// */
+
+@media (min-width: 320px) {
+  .blogPost {
+    flex-direction: column;
+  }
+  img {
+    border: none;
+  }
+  .description {
+    width: 100%;
+    padding: 20px;
+  }
+  .footer-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-container nav {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .blogPost {
+    flex-direction: row;
+  }
+  img {
+    border-right: solid black 2px;
+  }
+  .description {
+    width: 550px;
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1013px) {
+  .footer-container {
+    width: 85%;
+  }
+  .footer-container nav {
+    padding: 0;
+  }
 }

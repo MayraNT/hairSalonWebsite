@@ -74,7 +74,6 @@ h1 {
 
 #shopPhoto {
   margin-top: 2%;
-  width: 620px;
   height: 300px;
   border: solid black 2.5px;
   object-fit: cover;
@@ -82,7 +81,6 @@ h1 {
 }
 
 article {
-  margin: 1% 30% 3% 30%;
   font-size: 14px;
 }
 
@@ -104,7 +102,6 @@ footer p {
 }
 
 .footer-container {
-  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,4 +113,46 @@ footer p {
   color: white;
   border-right: solid white 1px;
   border-bottom: solid white 1px;
+}
+
+/* ////// RESPONSIVENESS ////// */
+
+@media (min-width: 320px) {
+  article {
+    margin: 1% 10% 3% 15%;
+  }
+  #shopPhoto {
+    width: 90%;
+  }
+  .footer-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-container nav {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  article {
+    margin: 1% 20% 3% 20%;
+  }
+  #shopPhoto {
+    width: 620px;
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1013px) {
+  article {
+    margin: 1% 30% 3% 30%;
+  }
+  .footer-container {
+    width: 85%;
+  }
+  .footer-container nav {
+    padding: 0;
+  }
 }

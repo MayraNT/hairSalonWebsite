@@ -64,10 +64,6 @@ h1 {
   color: white;
 }
 
-.contactForm {
-  width: 600px;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -92,7 +88,7 @@ form {
   text-transform: uppercase;
 }
 
-#submit-btn {
+#send-btn {
   width: 100px;
   border: solid white 1.5px;
   background-color: rgb(36, 34, 34);
@@ -100,10 +96,11 @@ form {
   font-family: 'Chango', cursive;
 }
 
-#submit-btn:hover {
+#send-btn:hover {
   color: rgb(36, 34, 34);
   background-color: white;
   border: solid rgb(36, 34, 34) 2px;
+  cursor: pointer;
 }
 
 /* ////// FOOTER ////// */
@@ -136,4 +133,49 @@ footer p {
   color: white;
   border-right: solid white 1px;
   border-bottom: solid white 1px;
+}
+
+/* ////// RESPONSIVENESS ////// */
+
+@media (min-width: 320px) {
+  .contactForm {
+    width: 400px;
+  }
+  #message {
+    width: 400px;
+  }
+  .footer-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-container nav {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .contactForm {
+    width: 500px;
+  }
+  #message {
+    width: 500px;
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1013px) {
+  .contactForm {
+    width: 600px;
+  }
+  #message {
+    width: 600px;
+  }
+  .footer-container {
+    width: 85%;
+  }
+  .footer-container nav {
+    padding: 0;
+  }
 }
