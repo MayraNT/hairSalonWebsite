@@ -13,13 +13,12 @@ header {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 header .logo {
   padding-top: 40px;
   padding-bottom: 30px;
-  color: rgb(168, 69, 44);
 }
 
 #trims {
@@ -29,7 +28,7 @@ header .logo {
 }
 
 .main-nav {
-  padding: 0 25%;
+  padding: 0 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -41,11 +40,7 @@ nav > a {
   color: black;
 }
 
-nav > a:hover {
-  color: rgb(168, 69, 44);
-}
-
-#selected {
+nav > a:hover, #selected, .logo {
   color: rgb(168, 69, 44);
 }
 
@@ -70,7 +65,7 @@ h1 {
 }
 
 .blogContainer {
-  width: 50%;
+  width: 70%;
   margin-bottom: 3%;
 }
 
@@ -97,6 +92,7 @@ img:hover {
 }
 
 .description {
+  margin: 0;
   width: 550px;
   padding: 0 3%;
   text-align: center;
@@ -161,5 +157,6 @@ footer p {
 
 .footer-nav {
   color: white;
-  border: solid white 1px;
+  border-right: solid white 1px;
+  border-bottom: solid white 1px;
 }

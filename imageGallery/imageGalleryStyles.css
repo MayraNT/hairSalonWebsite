@@ -17,13 +17,12 @@ header {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 header .logo {
   padding-top: 40px;
   padding-bottom: 30px;
-  color: rgb(168, 69, 44);
 }
 
 #trims {
@@ -33,7 +32,7 @@ header .logo {
 }
 
 .main-nav {
-  padding: 0 25%;
+  padding: 0 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -45,11 +44,7 @@ nav > a {
   color: black;
 }
 
-nav > a:hover {
-  color: rgb(168, 69, 44);
-}
-
-#selected {
+nav > a:hover, #selected, .logo {
   color: rgb(168, 69, 44);
 }
 
@@ -62,7 +57,7 @@ main {
 }
 
 h1 {
-  width: 280px;
+  width: 260px;
   margin-bottom: 30px;
   padding: 10px;
   font-family: 'Chango', cursive;
@@ -123,5 +118,6 @@ footer p {
 
 .footer-nav {
   color: white;
-  border: solid white 1px;
+  border-right: solid white 1px;
+  border-bottom: solid white 1px;
 }
