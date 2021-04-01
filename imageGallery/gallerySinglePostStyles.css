@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* ////// HEADER AND NAV ////// */
+header {
+  margin-bottom: 45px;
+  height: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+header .logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#trims {
+  font-family: 'Chango', cursive;
+  font-size: 50px;
+  color: rgb(36, 34, 34);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+}
+
+nav > a:hover, #selected, .logo {
+  color: rgb(168, 69, 44);
+}
+
+/* ////// MAIN CONTENT ////// */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  width: 350px;
+  padding: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(36, 34, 34);
+  color: white;
+}
+
+h1, h3 {
+  font-family: 'Chango', cursive;
+}
+
+h3 {
+  padding-bottom: 15px;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+#shopPhoto {
+  margin-top: 2%;
+  height: 300px;
+  border: solid black 2.5px;
+  object-fit: cover;
+  filter: grayscale();
+}
+
+article {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+/* ////// FOOTER ////// */
+footer {
+  height: 125px;
+  margin-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  background-color: rgb(26, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 13px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-nav {
+  color: white;
+  border-right: solid white 1px;
+  border-bottom: solid white 1px;
+}
+
+/* ////// RESPONSIVENESS ////// */
+
+@media (min-width: 320px) {
+  article {
+    margin: 1% 10% 3% 15%;
+  }
+  #shopPhoto {
+    width: 90%;
+  }
+  .footer-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-container nav {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-nav {
+    padding: 0 15%;
+  }
+  article {
+    margin: 1% 20% 3% 20%;
+  }
+  #shopPhoto {
+    width: 620px;
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1013px) {
+  .main-nav {
+    padding: 0 30%;
+  }
+  article {
+    margin: 1% 30% 3% 30%;
+  }
+  .footer-container {
+    width: 85%;
+  }
+  .footer-container nav {
+    padding: 0;
+  }
+}

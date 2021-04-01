@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+/* ////// HEADER AND NAV ////// */
+header {
+  margin-bottom: 45px;
+  height: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+header .logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#trims {
+  font-family: 'Chango', cursive;
+  font-size: 50px;
+  color: rgb(36, 34, 34);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+}
+
+nav > a:hover, #selected, .logo {
+  color: rgb(168, 69, 44);
+}
+
+/* ////// MAIN CONTENT ////// */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  width: 260px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-family: 'Chango', cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(36, 34, 34);
+  color: white;
+}
+
+.gallery {
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  margin: 15px 10px;
+  border: solid black 2px;
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/* ////// FOOTER ////// */
+footer {
+  height: 125px;
+  margin-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  background-color: rgb(26, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 13px;
+}
+
+.footer-container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-nav {
+  color: white;
+  border-right: solid white 1px;
+  border-bottom: solid white 1px;
+}
+
+/* ////// RESPONSIVENESS ////// */
+
+@media (min-width: 320px) {
+  img {
+    width: 200px;
+    height: 200px; 
+  }
+  .footer-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-container nav {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-nav {
+    padding: 0 15%;
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1013px) {
+  .main-nav {
+    padding: 0 30%;
+  }
+  img {
+    width: 300px;
+    height: 300px; 
+  }
+  .footer-container {
+    width: 85%;
+  }
+  .footer-container nav {
+    padding: 0;
+  }
+}
